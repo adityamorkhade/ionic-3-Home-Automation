@@ -1,6 +1,10 @@
 # ionic-3-Home-Automation
 Home Automation App using ionic 3 / ionic-angular framework  www.ionicframework.com
 
+## Screenshots
+
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -49,6 +53,8 @@ ionic serve -l
 ```
 ### For Developer
 
+##### All Developers are invited without any invitation card to contribute 
+
 #### Push your work in GitHub repo
 
 ```
@@ -60,3 +66,5 @@ git commit -m "<YOUR COMMENT FOR CHANGES>"
 ```
 git push
 ```
+
+## Thank You !!
