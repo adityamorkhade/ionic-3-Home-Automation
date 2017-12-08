@@ -1,6 +1,9 @@
 # ionic-3-Home-Automation
 Home Automation App using ionic 3 / ionic-angular framework  www.ionicframework.com
 
+#### All Developers are invited without an invitation card to contribute.
+
+
 ## Screenshots
 
 ![Screen Shots](https://github.com/ashish-eqn/ionic-3-Home-Automation/blob/master/Screenshots/Screenshot1.png)
@@ -60,9 +63,7 @@ npm install
 ```
 ionic serve -l
 ```
-### For Developer
-
-##### All Developers are invited without any invitation card to contribute 
+### For contribution
 
 #### Push your work in GitHub repo
 
