@@ -1,5 +1,5 @@
 # ionic-3-Home-Automation
-Home Automation App using ionic 3 / ionic-angular framework  www.ionicframework.com
+Home Automation mobile App is developed using ionic 3 / ionic-angular framework  www.ionicframework.com
 
 #### All Developers are invited without an invitation card to contribute.
 
@@ -77,4 +77,4 @@ git commit -m "<YOUR COMMENT FOR CHANGES>"
 git push
 ```
 
-##                                              Thank You !!
+## Thank You !!
