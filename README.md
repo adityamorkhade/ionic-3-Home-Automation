@@ -11,8 +11,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
 #### Node.js
+
+How to install **node.js** see documentation [nodejs](https://nodejs.org/en/docs/)
+##### If you already installed latest version of node then check it using
+
 ```
 node -v
 ```
@@ -22,8 +25,14 @@ npm -v
 
 #### ionic v 3.19
 install latest version for ionic framework by using following command in node cmd.
+###### Skip this step if already installed
 ```
 npm install ionic@latest cordova@latest
+```
+##### Check latest installed version of Ionic
+
+```
+ionic -v
 ```
 
 ### Installing and playing with Application
