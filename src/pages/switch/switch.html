@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="navclr">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>switch</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="content">
+  <ion-card class="cardgrp" *ngFor="let item of switchGroup" id="home-card21">
+    <ion-list>
+      <ion-item color="navclr" id="home-list-item5">
+        <ion-icon name="home" item-left></ion-icon>
+        {{item.title}}
+      </ion-item>
+      <form id="home-form1" *ngFor="let items of item.switch">
+        <ion-item class="cardgrp" id="home-toggle1">
+          <ion-label>
+            {{items}}
+          </ion-label>
+          <ion-toggle color="positive" (ionChange)="presentToast(items)" cheked="false"></ion-toggle>
+        </ion-item>
+      </form>
+      <ion-item color="navclr" id="home-list-item4">
+        <ion-icon name="open" item-left></ion-icon>
+        See in Detail
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
