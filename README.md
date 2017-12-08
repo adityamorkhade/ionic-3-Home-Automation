@@ -27,7 +27,7 @@ npm -v
 install latest version for ionic framework by using following command in node cmd.
 ###### Skip this step if already installed
 ```
-npm install ionic@latest cordova@latest
+npm install -g ionic@latest cordova@latest
 ```
 ##### Check latest installed version of Ionic
 
