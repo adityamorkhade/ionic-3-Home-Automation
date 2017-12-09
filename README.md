@@ -1,8 +1,8 @@
 # ionic-3-Home-Automation
+
 Home Automation mobile App is developed using ionic 3 / ionic-angular framework  www.ionicframework.com
 
-#### All Developers are invited without an invitation card to contribute.
-
+> All Developers are invited without an invitation card to contribute.
 
 ## Screenshots
 
@@ -14,25 +14,29 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-#### Node.js
+* **Node.js**
 
 How to install **node.js** see documentation [nodejs](https://nodejs.org/en/docs/)
-##### If you already installed latest version of node then check it using
+
+> If you already installed latest version of node then check it using
 
 ```
 node -v
-```
-```
+
 npm -v
 ```
 
-#### ionic v 3.19
+* **ionic v 3.19**
+
 install latest version for ionic framework by using following command in node cmd.
-###### Skip this step if already installed
+
+> Skip this step if already installed
+
 ```
 npm install -g ionic@latest cordova@latest
 ```
-##### Check latest installed version of Ionic
+
+> Check latest installed version of Ionic
 
 ```
 ionic -v
@@ -40,41 +44,42 @@ ionic -v
 
 ### Installing and playing with Application
 
-Use step by step to avoid error.
+>Use step by step to avoid error.
 
-#### clone this project in your wroking directory or wherever you want using
+* **Get this project in your PC**
+
+ clone this project in your wroking directory or wherever you want using
+
 ```
 git clone https://github.com/ashish-eqn/ionic-3-Home-Automation.git
-```
-```
+
 cd ionic-3-Home-Automation
 ```
 
-#### Install node_moddule
+* **Install node_moddule dependencies**
 
-Make sure you are in "ionic-3-Home-Automation" directory
+>Make sure you are in "ionic-3-Home-Automation" directory
 
 ```
 npm install
 ```
 
-#### Serve or View in your default Web Browser
+* **Serve or View in your default Web Browser**
 
 ```
 ionic serve -l
 ```
+
 ### For contribution
 
-#### Push your work in GitHub repo
+* **Push your work in GitHub repo**
 
 ```
 git add -A
-```
-```
+
 git commit -m "<YOUR COMMENT FOR CHANGES>"
-```
-```
+
 git push
 ```
 
-## Thank You !!
+**Thank You !!**
