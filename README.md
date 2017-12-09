@@ -21,8 +21,7 @@ How to install **node.js** see documentation [nodejs](https://nodejs.org/en/docs
 
 ```
 node -v
-```
-```
+
 npm -v
 ```
 
