@@ -1,8 +1,10 @@
 page-switch {
-    .content{
-    background-color: #222164;
+    .cardTitle{
+        background: hsla(0, 0%, 4%, 0.849);
+        color: white
     }
     .cardgrp{
-        background-color: rgba(140, 159, 214, 0.616);
+        background-color: hsla(0, 0%, 15%, 0.767);
+        color: white
     }
 }

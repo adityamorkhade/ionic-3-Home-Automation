@@ -1,19 +1,19 @@
 <ion-header>
 
-  <ion-navbar color="navclr">
+  <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>switch</ion-title>
+    <ion-title>{{pageTitle | uppercase}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding class="content">
-  <ion-card class="cardgrp" *ngFor="let item of switchGroup" id="home-card21">
+<ion-content padding>
+  <ion-card *ngFor="let item of switchGroup" id="home-card21">
     <ion-list>
-      <ion-item color="navclr" id="home-list-item5">
+      <ion-item class="cardTitle" id="home-list-item5">
         <ion-icon name="home" item-left></ion-icon>
         {{item.title}}
       </ion-item>
@@ -22,10 +22,12 @@
           <ion-label>
             {{items}}
           </ion-label>
-          <ion-toggle color="positive" (ionChange)="presentToast(items)" cheked="false"></ion-toggle>
+          <ion-toggle color="positive"
+          (ionChange)="presentToast($event, item.title, items)"
+          cheked="false"></ion-toggle>
         </ion-item>
       </form>
-      <ion-item color="navclr" id="home-list-item4">
+      <ion-item class="cardTitle" id="home-list-item4">
         <ion-icon name="open" item-left></ion-icon>
         See in Detail
       </ion-item>

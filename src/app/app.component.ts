@@ -6,23 +6,18 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { DashboardPage } from '../pages/dashboard/dashboard';
-import { AccountPage } from '../pages/account/account';
-import { LoginPage } from '../pages/login/login';
-import { RoomPage } from '../pages/room/room';
-import { SchedulePage } from '../pages/schedule/schedule';
-import { SettingPage } from '../pages/setting/setting';
-import { SwitchPage } from '../pages/switch/switch';
 
+import { TabsPage } from '../pages/tabs/tabs';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
+  tabsPage:any = TabsPage;
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = DashboardPage;
+  //rootPage = DashboardPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -35,13 +30,7 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Home', component: DashboardPage },
-      { title: 'Account', component: AccountPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Room', component: RoomPage },
-      { title: 'Schedule', component: SchedulePage },
-      { title: 'Setting', component: SettingPage },
-      { title: 'Switch', component: SwitchPage },      
+      { title: 'Home', component: TabsPage },      
       { title: 'My First List', component: ListPage }
     ];
   }
@@ -55,6 +44,9 @@ export class MyApp {
     });
   }
 
+  logout(){
+    console.log('logout');
+  }
   openPage(page) {
     // close the menu when clicking a link from the menu
     this.menu.close();

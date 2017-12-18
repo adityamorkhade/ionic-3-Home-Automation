@@ -7,6 +7,7 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'switch.html',
 })
 export class SwitchPage {
+  pageTitle:string = 'Switches'
   switchGroup: any = [
     {
       title: 'Bed Room', switch: ['Switch 1', 'Switch 2', 'Switch 3']
@@ -25,16 +26,31 @@ export class SwitchPage {
     }
   ]
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController ) {
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public toastCtrl: ToastController
+  ) {
     //this.switchGroup = this.switchGroup;
   }
-  presentToast(items) {
-    let toast = this.toastCtrl.create({
-      message: 'User was added ' + items,
-      duration: 3000,
-      position: 'top'
-    });
-    toast.present(toast);
+  presentToast(value: any, name:string, items:string) {
+    console.log('value: ', value.checked);
+    console.log('value: ', value);    
+    if (value.checked == true) {
+      let toast = this.toastCtrl.create({
+        message: name + ' ' + items + ' ' + 'is ON',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present(toast);
+    } else if (value.checked == false) {
+      let toast = this.toastCtrl.create({
+        message: name + ' ' + items + ' ' + 'is OFF',
+        duration: 3000,
+        position: 'bottom'
+      });
+      toast.present(toast);
+    }
   }
 
   ionViewDidLoad() {

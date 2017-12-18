@@ -39,8 +39,9 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  navclr: #001e82,
+  tabColor: hsla(0, 0%, 14%, 0.568)
 );
+$toolbar-background: (hsla(0, 0%, 14%, 0.568));
 
 
 // App iOS Variables

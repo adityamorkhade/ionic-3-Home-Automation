@@ -9,14 +9,11 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AccountProvider } from '../providers/account/account';
-import { AccountPage } from '../pages/account/account';
 import { DashboardPage } from '../pages/dashboard/dashboard';
-import { LoginPage } from '../pages/login/login';
 import { RoomPage } from '../pages/room/room';
-import { SchedulePage } from '../pages/schedule/schedule';
-import { SettingPage } from '../pages/setting/setting';
-import { SignupPage } from '../pages/signup/signup';
 import { SwitchPage } from '../pages/switch/switch';
+import { TabsPage } from '../pages/tabs/tabs';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 @NgModule({
   declarations: [
@@ -24,13 +21,9 @@ import { SwitchPage } from '../pages/switch/switch';
     ItemDetailsPage,
     ListPage,
     DashboardPage,
-    AccountPage,
-    LoginPage,
     RoomPage,
-    SchedulePage,
-    SettingPage,
-    SignupPage,
-    SwitchPage
+    SwitchPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -40,17 +33,14 @@ import { SwitchPage } from '../pages/switch/switch';
   entryComponents: [
     MyApp,
     DashboardPage,
-    AccountPage,
-    LoginPage,
     RoomPage,
-    SchedulePage,
-    SettingPage,
-    SignupPage,
     SwitchPage,
     ItemDetailsPage,
-    ListPage
+    ListPage,
+    TabsPage
   ],
   providers: [
+    InAppBrowser,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

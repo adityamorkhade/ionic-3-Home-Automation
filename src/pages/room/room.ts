@@ -13,6 +13,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'room.html',
 })
 export class RoomPage {
+  title: string = 'Rooms';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
