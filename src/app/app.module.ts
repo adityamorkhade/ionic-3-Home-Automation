@@ -14,6 +14,8 @@ import { RoomPage } from '../pages/room/room';
 import { SwitchPage } from '../pages/switch/switch';
 import { TabsPage } from '../pages/tabs/tabs';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { HTTP } from '@ionic-native/http';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -41,6 +44,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
   ],
   providers: [
     InAppBrowser,
+    HTTP,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},

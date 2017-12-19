@@ -15,7 +15,7 @@ export class DashboardPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public iab: InAppBrowser
+    private iab: InAppBrowser,
   ) { }
 
    openHA(){
@@ -26,6 +26,7 @@ export class DashboardPage {
     this.navCtrl.push(SwitchPage);
   }
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad DashboardPage');
   }
 
