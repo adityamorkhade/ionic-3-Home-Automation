@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/ionic-angular.svg)](https://badge.fury.io/js/ionic-angular)
+
+
 # ionic-3-Home-Automation
 
 Home Automation mobile App is developed using ionic 3 / ionic-angular framework  www.ionicframework.com
@@ -81,5 +84,9 @@ git commit -m "<YOUR COMMENT FOR CHANGES>"
 
 git push
 ```
+
+## License
+
+[![CC0](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/License_icon-mit-2.svg/156px-License_icon-mit-2.svg.png)](LICENSE)
 
 **Thank You !!**

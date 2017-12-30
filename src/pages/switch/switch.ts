@@ -7,22 +7,13 @@ import { ToastController } from 'ionic-angular';
   templateUrl: 'switch.html',
 })
 export class SwitchPage {
-  pageTitle:string = 'Switches'
+  pageTitle:string = 'Switches';
+
+  ws = new WebSocket('ws://192.168.0.110:8123/api/websocket');
+
   switchGroup: any = [
     {
       title: 'Bed Room', switch: ['Switch 1', 'Switch 2', 'Switch 3']
-    },
-    {
-      title: 'Kitchen', switch: ['Switch 1', 'Switch 2']
-    },
-    {
-      title: 'Hall', switch: ['Switch 1', 'Switch 2', 'Switch 3', 'Switch 4']
-    },
-    {
-      title: 'Bath Room', switch: ['Switch 1', 'Switch 2']
-    },
-    {
-      title: 'Office', switch: ['Office Switch 1', 'Office Switch 2']
     }
   ]
 
@@ -33,24 +24,37 @@ export class SwitchPage {
   ) {
     //this.switchGroup = this.switchGroup;
   }
+
+  switchOn(){
+    this.ws.send('{"id": 2, "type": "call_service", "domain": "switch", "service": "turn_on", "service_data": {"entity_id": "switch.fan"}}\n');    
+  }
+
+  switchOff(){
+    this.ws.send('{"id": 2, "type": "call_service", "domain": "switch", "service": "turn_off", "service_data": {"entity_id": "switch.fan"}}\n');    
+  }
+
   presentToast(value: any, name:string, items:string) {
-    console.log('value: ', value.checked);
-    console.log('value: ', value);    
     if (value.checked == true) {
+
+    this.ws.send('{"id": 2, "type": "call_service", "domain": "switch", "service": "turn_on", "service_data": {"entity_id": "switch.fan"}}\n');      
+
       let toast = this.toastCtrl.create({
         message: name + ' ' + items + ' ' + 'is ON',
         duration: 3000,
         position: 'bottom'
       });
-      toast.present(toast);
+      toast.present();
     } else if (value.checked == false) {
+
+    this.ws.send('{"id": 2, "type": "call_service", "domain": "switch", "service": "turn_off", "service_data": {"entity_id": "switch.fan"}}\n');      
+
       let toast = this.toastCtrl.create({
         message: name + ' ' + items + ' ' + 'is OFF',
         duration: 3000,
         position: 'bottom'
       });
-      toast.present(toast);
-    }
+      toast.present();
+    } 
   }
 
   ionViewDidLoad() {

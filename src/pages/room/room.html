@@ -11,4 +11,11 @@
 
 <ion-content padding>
 <h2>Room page</h2>
+<ul *ngFor="let data of datas">
+  <li>
+    {{data.entity_id}} = 
+    {{data.state}}
+  </li>
+</ul>
+<button ion-button (click)=pushme()>push</button>
 </ion-content>

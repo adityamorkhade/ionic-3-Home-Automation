@@ -11,6 +11,8 @@
 
 
 <ion-content padding>
+  <button ion-button color="primary" (click)="switchOn()">Fan ON</button>
+  <button ion-button color="danger" (click)="switchOff()">Fan OFF</button>  
   <ion-card *ngFor="let item of switchGroup" id="home-card21">
     <ion-list>
       <ion-item class="cardTitle" id="home-list-item5">
