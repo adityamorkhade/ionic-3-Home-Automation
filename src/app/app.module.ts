@@ -1,54 +1,49 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+import { AboutPage } from '../pages/about/about';
+import { ContactPage } from '../pages/contact/contact';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { AccountProvider } from '../providers/account/account';
-import { DashboardPage } from '../pages/dashboard/dashboard';
-import { RoomPage } from '../pages/room/room';
-import { SwitchPage } from '../pages/switch/switch';
-import { TabsPage } from '../pages/tabs/tabs';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { HTTP } from '@ionic-native/http';
-import { HttpModule } from '@angular/http';
+import { ControlsPage } from '../pages/controls/controls';
+import { SettingsPage } from '../pages/settings/settings';
+import { SettingsProvider } from '../providers/setting/setting';
 
 @NgModule({
   declarations: [
     MyApp,
-    ItemDetailsPage,
-    ListPage,
-    DashboardPage,
-    RoomPage,
-    SwitchPage,
-    TabsPage
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage,
+    ControlsPage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    DashboardPage,
-    RoomPage,
-    SwitchPage,
-    ItemDetailsPage,
-    ListPage,
-    TabsPage
+    AboutPage,
+    ContactPage,
+    HomePage,
+    TabsPage,
+    ControlsPage,
+    SettingsPage
   ],
   providers: [
-    InAppBrowser,
-    HTTP,
     StatusBar,
     SplashScreen,
+    SettingsProvider,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AccountProvider
+    SettingsProvider
   ]
 })
 export class AppModule {}

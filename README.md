@@ -9,7 +9,7 @@ Home Automation mobile App is developed using ionic 3 / ionic-angular framework 
 
 ## Screenshots
 
-![Screen Shots](https://github.com/ashish-eqn/ionic-3-Home-Automation/blob/master/Screenshots/Screenshot1.png)
+![Screen Shots](https://github.com/ashish-eqn/ionic-3-Home-Automation/blob/master/Screenshots/Screenshot.png)
 
 ## Getting Started
 
